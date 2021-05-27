@@ -1,0 +1,84 @@
+
+
+#contact {
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+.contact {
+
+    &__title {
+       font-size: 7rem;
+       text-align: center; 
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5rem;
+
+        &-container {
+            background-color: white;
+            height: 70vh;
+            width: 70vw;
+            margin: 0 auto;
+        }
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 3rem auto;
+            position: relative;
+        }
+
+        &-label {
+            position: absolute;
+            bottom: 1rem;
+            font-size: 2.4rem;
+            transition: all .5s ease-in-out;
+        }
+
+        &-input, &-textarea {
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            font-size: 2rem;
+
+            //Floating label for name & email inputs css
+            &:focus ~ label,
+            &:valid ~ label,
+            &:not(:placeholder-shown) ~ label {
+                bottom: 3rem;
+                transition: all .5s ease-in-out;
+            }
+            
+            //Floating label for textarea css
+            &:focus ~ label[for=message],
+            &:valid ~ label[for=message] {
+                bottom: 6rem;
+            }
+
+            //If input is valid border will be teal color
+            &:valid {
+                border-color: #0a838a;
+            }
+
+            //If input not valid border red
+            &:focus:not(:valid) {
+                border-color: red;
+            }
+        }
+        &-submit {
+            width: 15%;
+            height: 5rem;
+            margin: 3rem auto;
+            font-size: 2.5rem;
+            font-weight: bold;
+            background-color: transparent;
+            border: 3px #0a838a solid;
+            border-radius: 10px;
+        }
+    }
+}

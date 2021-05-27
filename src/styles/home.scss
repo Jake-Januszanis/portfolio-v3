@@ -1,0 +1,60 @@
+
+#home {
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.home-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.home-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.home-flex > * {
+    flex: 1 1 50%;
+}
+
+.home-header-primary {
+    font-size: 6rem;
+    margin-left: 15rem;
+    color: #0a838a;
+}
+
+.home-header-sub {
+    font-size: 6rem;
+    line-height: 1rem;
+    margin-left: 15rem;
+    
+}
+
+.home-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    max-width: 40ch;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+.home-icons {
+    font-size: 4.5rem;
+    padding-left: 1rem;
+
+    &__container {
+        margin-top: 7rem;
+        margin-left: 15rem;
+    }
+    
+}
+
+@media all and (min-width: 1600px) {
+    
+    #home {
+        margin: 0 10%;
+    }
+}

@@ -1,0 +1,58 @@
+
+
+#projects {
+    height: auto;
+    position: relative;
+    margin: 0 10%;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 6rem;
+}
+
+.projects-flex-container {
+    display: flex;
+    margin-bottom: 5rem;
+
+    // ****Left side of projects display flex*****
+    &__left {
+        margin-left: 5rem;
+
+        &-title {
+            font-size: 3rem;
+        }
+
+        &-subtitle {
+            font-size: 1.5rem;
+        }
+
+        &-description {
+            font-size: 1.5rem;
+            width: 80%;
+        }
+
+        &-links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+// *****CSS for right side of projects display*****
+    &__right-image {
+        height: 30rem;
+        border-radius: 1rem;
+       
+    }
+}
+
+.projects-button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    text-align: start;
+    cursor: pointer;
+}
+.projects-flex-container > * {
+    flex: 1 1 50%;
+}
