@@ -1,4 +1,4 @@
-
+@import "../styles/variables.scss";
 
 #projects {
     height: auto;
@@ -6,9 +6,16 @@
     margin: 0 10%;
 }
 
+//Flex layout for page
+.projects-flex-container > * {
+    flex: 1 1 50%;
+}
+
 .projects-title {
     text-align: center;
     font-size: 6rem;
+    font-family: $secondary-font;
+    color: $black-text;
 }
 
 .projects-flex-container {
@@ -18,6 +25,8 @@
     // ****Left side of projects display flex*****
     &__left {
         margin-left: 5rem;
+        color: $black-text;
+
 
         &-title {
             font-size: 3rem;
@@ -35,6 +44,16 @@
         &-links {
             display: flex;
             flex-direction: column;
+
+            &-btn {
+                color: $accent-color-primary;
+                border: none;
+                background-color: transparent;
+                font-size: 2rem;
+                text-align: start;
+                cursor: pointer;
+            }
+            
         }
     }
 
@@ -42,17 +61,5 @@
     &__right-image {
         height: 30rem;
         border-radius: 1rem;
-       
     }
-}
-
-.projects-button {
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-    text-align: start;
-    cursor: pointer;
-}
-.projects-flex-container > * {
-    flex: 1 1 50%;
 }

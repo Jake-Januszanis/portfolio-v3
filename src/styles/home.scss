@@ -1,3 +1,5 @@
+@import "../styles/variables.scss";
+
 
 #home {
     height: 100vh;
@@ -22,28 +24,21 @@
 .home-header-primary {
     font-size: 6rem;
     margin-left: 15rem;
-    color: #0a838a;
+    color: $accent-color-primary;
 }
 
 .home-header-sub {
     font-size: 6rem;
     line-height: 1rem;
     margin-left: 15rem;
+    color: $black-text;
     
-}
-
-.home-text {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    max-width: 40ch;
-    width: 70%;
-    margin-left: 20%;
-    margin-top: 8%;
 }
 
 .home-icons {
     font-size: 4.5rem;
     padding-left: 1rem;
+    color: $black-text;
 
     &__container {
         margin-top: 7rem;

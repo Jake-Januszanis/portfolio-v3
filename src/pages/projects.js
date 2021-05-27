@@ -20,8 +20,8 @@ export default function Projects() {
                         Donec fringilla congue sapien vitae mollis. Sed id ante mattis, facilisis risus non, aliquet massa. 
                         </p>
                         <div className="projects-flex-container__left-links">
-                            <button className="projects-button">Code</button>
-                            <button className="projects-button">Live Site</button>
+                            <button className="projects-flex-container__left-links-btn">Code</button>
+                            <button className="projects-flex-container__left-links-btn">Live Site</button>
                         </div>
                     </div>
                     <div className="projects-flex-container__right">
@@ -39,8 +39,8 @@ export default function Projects() {
                         Donec fringilla congue sapien vitae mollis. Sed id ante mattis, facilisis risus non, aliquet massa. 
                         </p>
                         <div className="projects-flex-container__left-links">
-                            <button className="projects-button">Code</button>
-                            <button className="projects-button">Live Site</button>
+                            <button className="projects-flex-container__left-links-btn">Code</button>
+                            <button className="projects-flex-container__left-links-btn">Live Site</button>
                         </div>
                     </div>
                     <div className="projects-flex-container__right">

@@ -1,28 +1,22 @@
 
+@import "../styles/variables.scss";
+
 nav {
     display: flex;
     justify-content: flex-end;
     height: 10vh;
-}
-
-.nav-left {
-    font-family: 'Michroma', sans-serif;
-    font-size: 2.8rem;
-    margin: 2.5rem 7rem;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.nav-right {
     margin: 2.5rem 4rem;
+}
 
-    &__link {
-        font-size: 2.5rem;
-        padding-right: 2rem;
-        text-decoration: none;
-        color: inherit;
+
+.nav__link {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: $black-text;
 
         &:hover {
             font-weight: bold;
+            color: $accent-color-primary;
         }
     }
-}

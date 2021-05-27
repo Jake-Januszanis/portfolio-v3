@@ -2,7 +2,7 @@
 
 #contact {
     height: 100vh;
-    background-color: #eeeeee;
+    background-color: $gray-bg;
 }
 
 .contact {
@@ -11,7 +11,7 @@
        font-size: 7rem;
        text-align: center; 
        padding-top: 5rem;
-       font-family: 'Playfair Display SC', serif;
+       font-family: $secondary-font;
        color: $black-text;
     }
 
@@ -22,9 +22,11 @@
         padding-top: 5rem;
 
         &-container {
-            background-color: white;
+            background-color: $white-bg;
             height: 70vh;
+            max-height: 60rem;
             width: 70vw;
+            max-width: 130rem;
             margin: 0 auto;
         }
 
@@ -32,7 +34,7 @@
             display: flex;
             flex-direction: column;
             width: 50%;
-            margin: 3rem auto;
+            margin: 4rem auto;
             position: relative;
         }
 
@@ -41,31 +43,34 @@
             bottom: 1rem;
             font-size: 2.4rem;
             transition: all .5s ease-in-out;
+            color: $black-text;
         }
 
         &-input, &-textarea {
             border: none;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid #222;
             outline: none;
             font-size: 2rem;
+            background-color: $white-bg;
 
             //Floating label for name & email inputs css
             &:focus ~ label,
             &:valid ~ label,
             &:not(:placeholder-shown) ~ label {
-                bottom: 3rem;
+                bottom: 4rem;
+                font-size: 1.7rem;
                 transition: all .5s ease-in-out;
             }
             
             //Floating label for textarea css
             &:focus ~ label[for=message],
             &:valid ~ label[for=message] {
-                bottom: 6rem;
+                bottom: 7rem;
             }
 
             //If input is valid border will be teal color
             &:valid {
-                border-color: #0a838a;
+                border-color:  $accent-color-primary;
             }
 
             //If input not valid border red
@@ -75,17 +80,19 @@
         }
         &-submit {
             width: 15rem;
-            height: 5rem;
+            height: 5.5rem;
             margin: 3rem auto;
             font-size: 2.5rem;
             font-weight: bold;
-            color: #131313;
-            border: 2px #0a848aa2 solid;
+            color: $black-text;
+            border: none;
+            border: 2px solid $accent-color-light;
             border-radius: 10px;
             position: relative;
             z-index: 1;
             overflow: hidden;
-
+            
+            //CSS for button hover effect
             &::after {
                 content: '';
                 width: 100%;
@@ -93,14 +100,14 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                background-color: #fff;
+                background-color: $white-bg;
                 z-index: -2;
-                border-radius: 10px;
+                overflow: hidden;
             }
 
             &::before {
                 content: '';
-                background-color: #0a848aa2;
+                background-color: $accent-color-light;
                 width: 0%;
                 height: 100%;
                 position: absolute;
