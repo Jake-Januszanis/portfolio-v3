@@ -1,4 +1,4 @@
-
+@import "../styles/variables.scss";
 
 #contact {
     height: 100vh;
@@ -10,6 +10,9 @@
     &__title {
        font-size: 7rem;
        text-align: center; 
+       padding-top: 5rem;
+       font-family: 'Playfair Display SC', serif;
+       color: $black-text;
     }
 
     &__form {
@@ -71,14 +74,48 @@
             }
         }
         &-submit {
-            width: 15%;
+            width: 15rem;
             height: 5rem;
             margin: 3rem auto;
             font-size: 2.5rem;
             font-weight: bold;
-            background-color: transparent;
-            border: 3px #0a838a solid;
+            color: #131313;
+            border: 2px #0a848aa2 solid;
             border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #fff;
+                z-index: -2;
+                border-radius: 10px;
+            }
+
+            &::before {
+                content: '';
+                background-color: #0a848aa2;
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .8s;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                    transition: all .8s;
+                }
+            }
         }
     }
 }
