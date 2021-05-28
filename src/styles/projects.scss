@@ -39,6 +39,8 @@
         &-description {
             font-size: 1.7rem;
             width: 80%;
+            letter-spacing: .5%;
+            line-height: 130%;
         }
 
         &-links {
@@ -62,6 +64,13 @@
 // *****CSS for right side of projects display*****
     &__right-image {
         height: 30rem;
+        width: 40rem;
         border-radius: 1rem;
+
+        &-2 {
+            height: 34rem;
+            width: 40rem;
+            border-radius: 1rem;
+        }
     }
 }
