@@ -2,34 +2,36 @@
 
 #projects {
     height: auto;
-    position: relative;
-    margin: 0 10%;
+    margin: 0 13%;
 }
 
-//Flex layout for page
-.projects-flex-container > * {
-    flex: 1 1 50%;
-}
+// //Flex layout for page
+// .projects-flex-container > * {
+//     flex: 1 1 50%;
+// }
 
 .projects-title {
     text-align: center;
     font-size: 6rem;
     font-family: $secondary-font;
     color: $black-text;
+    padding-bottom: 4rem;
 }
 
 .projects-flex-container {
     display: flex;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    
 
     // ****Left side of projects display flex*****
     &__left {
-        margin-left: 5rem;
         color: $black-text;
 
 
         &-title {
             font-size: 3rem;
+            margin: 0;
         }
 
         &-subtitle {
@@ -39,6 +41,7 @@
         &-description {
             font-size: 1.7rem;
             width: 80%;
+            max-width: 66ch;
             letter-spacing: .5%;
             line-height: 130%;
         }
@@ -73,4 +76,31 @@
             border-radius: 1rem;
         }
     }
+}
+
+
+@media all and (min-width: $lrg-screen) {
+
+    .projects-flex-container {
+
+        &__left {
+
+            &-title {
+                font-size: 4rem;
+            }
+
+            &-subtitle {
+                font-size: 1.7rem;
+            }
+
+            &-description {
+                font-size: 2rem;
+            }
+
+            &-links-btn {
+                font-size: 2.5rem;;
+            }
+        }
+    }
+
 }

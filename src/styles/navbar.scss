@@ -21,3 +21,11 @@ nav {
             color: $accent-color-primary;
         }
     }
+
+
+   @media all and (min-width: $lrg-screen)  {
+       .nav__link {
+           font-size: 3rem;
+           padding-right: 2.4rem;
+       }
+   }

@@ -11,3 +11,10 @@
     font-size: 10rem;
     color: $accent-color-primary;
 }
+
+@media all and (min-width: $lrg-screen) {
+
+    .scroll-button {
+        font-size: 13rem;
+    }
+}

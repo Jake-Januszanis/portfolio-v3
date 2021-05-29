@@ -37,7 +37,7 @@
 
 .home-icons {
     font-size: 4.5rem;
-    padding-left: 1rem;
+    padding-right: 1rem;
     color: $black-text;
     cursor: pointer;
 
@@ -48,9 +48,29 @@
     
 }
 
-@media all and (min-width: 1600px) {
+@media all and (min-width: $lrg-screen) {
     
     #home {
         margin: 0 10%;
+    }
+
+    .home-flex {
+        margin-top: 10%;
+    }
+
+    .home-header {
+
+        &-primary {
+            font-size: 7rem;
+        }
+
+        &-sub {
+            font-size: 7rem;
+        }
+    }
+
+    .home-icons {
+        font-size: 5.5rem;
+        padding-right: 2rem;
     }
 }

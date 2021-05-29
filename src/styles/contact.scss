@@ -1,8 +1,9 @@
 @import "../styles/variables.scss";
 
 #contact {
-    height: 100vh;
+    height: auto;
     background-color: $gray-bg;
+    padding-bottom: 10rem;
 }
 
 .contact {
@@ -25,9 +26,11 @@
             background-color: $white-bg;
             height: 70vh;
             max-height: 60rem;
-            width: 70vw;
+            width: 65vw;
             max-width: 130rem;
             margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 22px rgb(0 0 0 / 60%)
         }
 
         &-group {

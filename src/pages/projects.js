@@ -12,7 +12,7 @@ export default function Projects() {
                 <div className="projects-flex-container">
                     <div className="projects-flex-container__left">
                         <h2 className="projects-flex-container__left-title">Weather App</h2>
-                        <h3 className="projects-flex-container__left-subtitle">React, Tailwind CSS, Express, Heroku</h3>
+                        <h3 className="projects-flex-container__left-subtitle">(React, Tailwind CSS, Express, Heroku)</h3>
                         <p className="projects-flex-container__left-description">
                         Weather app that takes 5 digit US zip code and retrieves data from OpenWeatherMap API.
                         The app displays either the current forecast or gives the user the option for a 5 day extended forecast.
@@ -31,7 +31,7 @@ export default function Projects() {
                 <div className="projects-flex-container">
                     <div className="projects-flex-container__left">
                         <h2 className="projects-flex-container__left-title">Pomodoro Timer</h2>
-                        <h3 className="projects-flex-container__left-subtitle">HTML5, SASS, JavaScript, EJS, Express, Mongoose, MongoDB, Heroku</h3>
+                        <h3 className="projects-flex-container__left-subtitle">(HTML5, SASS, JavaScript, EJS, Express, Mongoose, MongoDB, Heroku)</h3>
                         <p className="projects-flex-container__left-description">
                         Pomodoro timer that allows users to keep track of time spent studying using the Pomodoro technique.
                          Users can either use the guest timer or create an account which then allows them to save data to a 

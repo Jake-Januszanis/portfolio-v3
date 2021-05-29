@@ -9,6 +9,7 @@
 
 .about-title {
     padding-top: 5rem;
+    padding-bottom: 3rem;
     text-align: center;
     font-size: 7rem;
     font-family: $secondary-font;
@@ -36,5 +37,22 @@
 
 .about-flex > * {
     flex: 1 1 50%;
+}
+
+
+@media all and (min-width: $lrg-screen) {
+    
+
+    .about-wrapper {
+        margin: 0 10%;
+    }
+
+    .about-flex {
+        
+        &__left-text {
+            max-width: 66ch;
+            font-size: 2.8rem;
+        }
+    }
 }
 
