@@ -48,6 +48,7 @@
     
 }
 
+///***Large Screen CSS *****
 @media all and (min-width: $lrg-screen) {
     
     #home {
@@ -60,11 +61,7 @@
 
     .home-header {
 
-        &-primary {
-            font-size: 7rem;
-        }
-
-        &-sub {
+        &-primary, &-sub {
             font-size: 7rem;
         }
     }
@@ -72,5 +69,20 @@
     .home-icons {
         font-size: 5.5rem;
         padding-right: 2rem;
+    }
+}
+
+@media all and (max-width: $md-screen) {
+
+    .home-header {
+
+        &-primary, &-sub {
+            margin-left: 7rem;
+            font-size: 5rem;
+        }
+    }
+
+    .home-icons__container {
+        margin-left: 7rem;
     }
 }

@@ -9,7 +9,7 @@
 
 .about-title {
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     text-align: center;
     font-size: 7rem;
     font-family: $secondary-font;
@@ -26,10 +26,13 @@
         padding: 0 10rem;
         margin: 0;
         color: $black-text;
+        max-width: 66ch;
     }
 
     &__right-img {
-        height: 30rem;
+        height: auto;
+        width: 68rem;
+        margin-top: 3rem;
         align-content: flex-end;
         padding-right: 2rem;
     }
@@ -39,10 +42,9 @@
     flex: 1 1 50%;
 }
 
-
+///***Media query for screen size large or bigger
 @media all and (min-width: $lrg-screen) {
     
-
     .about-wrapper {
         margin: 0 10%;
     }
@@ -52,6 +54,43 @@
         &__left-text {
             max-width: 66ch;
             font-size: 2.8rem;
+        }
+    }
+}
+
+
+//***Media query for screen sizes medium to large
+@media all and (min-width: $md-screen) and (max-width: $lrg-screen) {
+
+    .about-flex {
+        &__left-text {
+            font-size: 2.2rem;
+        }
+        &__right-img {
+            width: 55rem;
+            height: auto;
+            margin-top: 1rem;
+        }
+    }
+}
+
+//**Media query for screens up to medium size
+@media all and (max-width: $md-screen) {
+    .about-title {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+    }
+    .about-flex {
+        display: inline-block;
+        margin: 0 auto;
+
+        &__left-text {
+            font-size: 2.5rem;
+            text-align: center;
+            color: $accent-color-primary;
+        }
+        &__right-img {
+           display: none;
         }
     }
 }

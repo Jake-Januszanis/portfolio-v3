@@ -56,6 +56,10 @@
             font-size: 2rem;
             background-color: $white-bg;
 
+            &[type=textarea] {
+                font-size: 1.7rem;
+            }
+
             //Floating label for name & email inputs css
             &:focus ~ label,
             &:valid ~ label,
@@ -68,7 +72,7 @@
             //Floating label for textarea css
             &:focus ~ label[for=message],
             &:valid ~ label[for=message] {
-                bottom: 7rem;
+                bottom: 8rem;
             }
 
             //If input is valid border will be teal color
@@ -126,6 +130,19 @@
                     transition: all .8s;
                 }
             }
+        }
+    }
+}
+//**Media query for screen size medium or smaller
+@media all and (max-width: $md-screen) {
+
+    .contact__form {
+
+        &-container {
+            width: 85%;
+        }
+        &-group {
+            width: 60%;
         }
     }
 }

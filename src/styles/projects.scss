@@ -5,11 +5,6 @@
     margin: 0 13%;
 }
 
-// //Flex layout for page
-// .projects-flex-container > * {
-//     flex: 1 1 50%;
-// }
-
 .projects-title {
     text-align: center;
     font-size: 6rem;
@@ -32,10 +27,12 @@
         &-title {
             font-size: 3rem;
             margin: 0;
+            font-weight: bold;
         }
 
         &-subtitle {
             font-size: 1.5rem;
+            font-weight: lighter;
         }
 
         &-description {
@@ -55,6 +52,7 @@
                 border: none;
                 background-color: transparent;
                 font-size: 2rem;
+                font-weight: bold;
                 text-align: start;
                 text-decoration: none;
                 padding-bottom: 1rem;
@@ -102,5 +100,40 @@
             }
         }
     }
+}
 
+@media all and (max-width: $md-screen) {
+
+    #projects {
+        margin: 0 10%;
+    }
+
+    .projects-title {
+        padding-bottom: 2rem;
+    }
+
+    .projects-flex-container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10rem;
+
+        &__left {
+
+            &-title,
+             &-subtitle,
+              &-description,
+                &-links-btn {
+                    text-align: center;
+                    width: 100%;
+                }
+                
+                &-links {
+                    margin-bottom: 3rem;
+                }
+        }
+
+        &__right-image {
+            width: 45rem;
+        }
+    }
 }
