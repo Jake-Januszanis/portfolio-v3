@@ -4,6 +4,7 @@
 #home {
     height: 100vh;
     margin-bottom: 5rem;
+    width: auto;
 }
 
 .home-wrapper {
@@ -32,7 +33,6 @@
     line-height: 1rem;
     margin-left: 15rem;
     color: $black-text;
-    
 }
 
 .home-icons {
@@ -60,7 +60,6 @@
     }
 
     .home-header {
-
         &-primary, &-sub {
             font-size: 7rem;
         }
@@ -71,11 +70,10 @@
         padding-right: 2rem;
     }
 }
-
+//**Medium screen CSS
 @media all and (max-width: $md-screen) {
 
     .home-header {
-
         &-primary, &-sub {
             margin-left: 7rem;
             font-size: 5rem;
@@ -85,4 +83,26 @@
     .home-icons__container {
         margin-left: 7rem;
     }
+}
+
+//****Mobile Screens
+
+@media all and (max-width: $sm-screen) {
+
+    .home-header-primary {
+        padding-top: 20%;
+    }
+
+
+    .home-header-sub, .home-header-primary {
+        line-height: 1;
+        margin: 1.5rem 0 1rem 2.5rem;
+        font-size: 4.5rem;
+    }
+
+    .home-icons__container {
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+    }
+
 }

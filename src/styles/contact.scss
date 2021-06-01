@@ -146,3 +146,18 @@
         }
     }
 }
+
+@media all and (max-width: $md-screen) {
+
+    .contact__form {
+
+        &-container {
+        width: 95%;
+        height: auto;
+        }
+
+        &-group {
+            width: 80%;
+        }
+    }
+}

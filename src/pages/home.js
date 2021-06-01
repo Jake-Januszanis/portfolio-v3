@@ -13,7 +13,7 @@ export default function Home() {
         <div className="home-flex">
           <div className="home-flex__1">
             <h1 className="home-header-primary">Jake Januszanis</h1>
-            <h1 className="home-header-sub">Front-End Web Developer</h1>
+            <h1 className="home-header-sub">Full-Stack Web Developer</h1>
               <div className="home-icons__container">
               <a href="https://github.com/Jake-Januszanis" target="_blank" className="home-icons"><FaGithub /></a>
               <a href="https://www.linkedin.com/in/jake-januszanis/" target="_blank" className="home-icons"><FaLinkedin /></a>

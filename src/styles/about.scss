@@ -95,3 +95,11 @@
     }
 }
 
+@media all and (max-width: $sm-screen) {
+
+    .about-flex__left-text {
+        padding: 0 8%;
+        font-size: 2.3rem;
+    }
+}
+
