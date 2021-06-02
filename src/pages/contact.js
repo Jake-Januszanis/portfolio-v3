@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="contact-wrapper">
         <h1 className="contact__title">Contact</h1>
         <div className="contact__form-container">
-            <form className="contact__form" name="contact">
+            <form className="contact__form" name="contact" method="POST">
               
                 <div className="contact__form-group">
                     <input className="contact__form-input" type="text" id="name" name="name" placeholder=" " required></input>
