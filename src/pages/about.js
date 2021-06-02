@@ -1,7 +1,6 @@
 import React from 'react'
 import "../styles/about.scss";
 import AboutSvg from "../styles/images/about-svg.svg";
-import ScrollBtn from './components/Scroll-btn';
 
 export default function About() {
     return (
@@ -10,19 +9,18 @@ export default function About() {
                 <h1 className="about-title">About Me</h1>
                 <div className="about-flex">
                     <div className="about-flex__left">
-                        <p className="about-flex__left-text">
-                            LoremFugiat Lorem esse commodo tempor est ex. Est veniam quis aliqua ullamco consequat fugiat esse excepteur.
-                            Adipisicing sunt mollit ea anim eu consequat esse mollit eu consectetur ex. Nostrud ullamco consequat velit veniam nulla minim nostrud do dolor velit aute.
-                            Eiusmod adipisicing consectetur consectetur ea eu do consequat commodo aliqua velit id reprehenderit. Consequat commodo tempor dolore cupidatat eiusmod sunt eiusmod velit do labore duis duis commodo dolor.
-                        </p>
+                       <p> Hello! I’m Jake Januszanis, a web developer currently located in Denver, CO.</p>
+                        <p>I consider myself to be more of a frontend developer but have worked with backend environments enough that I am confident in my ability to be effective on either side of the development process.
+                        As of recently, I have been obsessed with React and just love working with the component-based framework.</p>
+                        <p>When I’m not at home staring at my code editor you can usually find me on the mats training Brazilian Jiu-Jitsu or up in the mountains enjoying some solitude in nature.</p> 
+
                     </div>
 
                     <div className="about-flex__right">
-                        <img className="about-flex__right-img" src={AboutSvg} ></img>
+                        <img className="about-flex__right-img" alt="Guy resting back on laptop" src={AboutSvg} ></img>
                     </div>
                 </div> 
             </div>
-            {/* <a href="#projects"><ScrollBtn /></a> */}
         </section>
     )
 }

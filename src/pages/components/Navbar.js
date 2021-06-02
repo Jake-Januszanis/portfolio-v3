@@ -8,6 +8,12 @@ export default function Navbar() {
     function openPdf() {
         window.open(resume.default, "")
     }
+    function handleKeyPress (event) {
+        if (event.key === 13) {
+            window.open(resume.default, "")
+        }
+        return;
+    }
 
 
     return (
@@ -15,7 +21,8 @@ export default function Navbar() {
             <Link className="nav__link" to="#about">About</Link>
             <Link className="nav__link" to="#projects">Projects</Link>
             <Link className="nav__link" to="#contact">Contact</Link>
-            <a className="nav__link" onClick={openPdf}>Resume</a>
+            <button className="nav__link nav__link-btn" onClick={openPdf} onKeyPress={handleKeyPress}>Resume</button>
         </nav>
     )
 }
+

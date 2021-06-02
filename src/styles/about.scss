@@ -20,11 +20,13 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10rem;
+    font-size: 2.5rem;
+        
 
-    &__left-text {
+    &__left > p {
         font-size: 2.5rem;
         padding: 0 10rem;
-        margin: 0;
+        
         color: $black-text;
         max-width: 66ch;
     }
@@ -36,6 +38,10 @@
         align-content: flex-end;
         padding-right: 2rem;
     }
+}
+
+p {
+    margin-bottom: 2rem;
 }
 
 .about-flex > * {
@@ -84,9 +90,8 @@
         display: inline-block;
         margin: 0 auto;
 
-        &__left-text {
+        &__left > p {
             font-size: 2.5rem;
-            text-align: center;
             color: $accent-color-primary;
         }
         &__right-img {
@@ -97,7 +102,7 @@
 
 @media all and (max-width: $sm-screen) {
 
-    .about-flex__left-text {
+    .about-flex__left > p {
         padding: 0 8%;
         font-size: 2.3rem;
     }

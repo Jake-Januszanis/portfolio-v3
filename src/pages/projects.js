@@ -19,12 +19,12 @@ export default function Projects() {
                         The frontend was built with React and Tailwind CSS while handling the API calls with an Express server on the backend. 
                         </p>
                         <div className="projects-flex-container__left-links">
-                            <a href="https://github.com/Jake-Januszanis/react-weather" className="projects-flex-container__left-links-btn" target="_blank">Source Code</a>
-                            <a href="https://react-weather-v2.herokuapp.com/" className="projects-flex-container__left-links-btn" target="_blank">Live Site</a>
+                            <a href="https://github.com/Jake-Januszanis/react-weather" className="projects-flex-container__left-links-btn" target="_blank" rel="noreferrer">Source Code</a>
+                            <a href="https://react-weather-v2.herokuapp.com/" className="projects-flex-container__left-links-btn" target="_blank" rel="noreferrer">Live Site</a>
                         </div>
                     </div>
                     <div className="projects-flex-container__right">
-                        <img className="projects-flex-container__right-image" src={weatherAppImg}></img>
+                        <img className="projects-flex-container__right-image" alt="Weather app screenshot" src={weatherAppImg}></img>
                     </div>
                 </div>
 
@@ -39,12 +39,12 @@ export default function Projects() {
                          For security purposes, all passwords are hashed and salted using the bcrypt npm library.  
                         </p>
                         <div className="projects-flex-container__left-links">
-                            <a href="https://github.com/Jake-Januszanis/pomodoro-timer" className="projects-flex-container__left-links-btn" target="_blank"> Source Code</a>
-                            <a href="https://pomo-focus-timer.herokuapp.com/" className="projects-flex-container__left-links-btn" target="_blank">Live Site</a>
+                            <a href="https://github.com/Jake-Januszanis/pomodoro-timer" className="projects-flex-container__left-links-btn" target="_blank" rel="noreferrer">Source Code</a>
+                            <a href="https://pomo-focus-timer.herokuapp.com/" className="projects-flex-container__left-links-btn" target="_blank" rel="noreferrer">Live Site</a>
                         </div>
                     </div>
                     <div className="projects-flex-container__right">
-                        <img className="projects-flex-container__right-image-2" src={pomoTimerImg}></img>
+                        <img className="projects-flex-container__right-image-2" alt="Pomodoro app screenshot" src={pomoTimerImg}></img>
                     </div>
                 </div>
             </div>

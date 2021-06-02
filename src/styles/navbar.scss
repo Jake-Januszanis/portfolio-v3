@@ -16,10 +16,16 @@ nav {
     color: $black-text;
     cursor: pointer;
 
-        &:hover {
+        &:hover, &:focus     {
             font-weight: bold;
             color: $accent-color-primary;
         }
+
+      &-btn {
+          border: none;
+          background-color: transparent;
+          height: 0;
+      }  
     }
 
 
