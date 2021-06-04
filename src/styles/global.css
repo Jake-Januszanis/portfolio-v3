@@ -1,6 +1,6 @@
 
 @import 'normalize.css';
-@import  url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Notes */
 /*** (overflow-x: hidden) was used to hide white space on right side of chrome dev tools mobile preview. Specifically iphone displays */
