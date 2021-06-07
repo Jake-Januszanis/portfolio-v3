@@ -10,7 +10,7 @@ export default function About() {
                 <div className="about-flex">
                     <div className="about-flex__left">
                        <p> Hello! I’m Jake Januszanis, a web developer currently located in Denver, CO.</p>
-                        <p>Ironically my coding journey began nearly 3 years ago when I was out on a hike with a friend.
+                        <p>Myy coding journey began nearly 3 years ago when I was out on a hike with a friend.
                          He mentioned how he had been a freelance web developer for over 5 years and explained that it was something that anyone is capable of as long as they were committed.
                          Both of us coming from a Brazilian Jiu-Jitsu background he told me “If you can learn Jiu-Jitsu then you can learn to code”.
                          </p>
