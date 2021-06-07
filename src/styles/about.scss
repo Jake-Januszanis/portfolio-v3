@@ -2,7 +2,6 @@
 
 #about {
     background-color: $gray-bg;
-    height: auto;
     min-height: 50vh;
     position: relative;
 }
@@ -16,35 +15,28 @@
     color: $black-text;
 }
 
+.about-flex > * {
+    flex: 1 1 50%;
+}
+
 .about-flex {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10rem;
-    font-size: 2.5rem;
+    align-items: center;
+   
         
 
     &__left > p {
-        font-size: 2rem;
-        padding: 0 10rem;
+        font-size: 2.2rem;
+        padding: 0 10%;
         color: $black-text;
-        max-width: 66ch;
+        max-width: 68ch;
     }
 
     &__right-img {
-        height: auto;
-        width: 68rem;
-        margin-top: 3rem;
-        align-content: flex-end;
-        padding-right: 2rem;
+        width: 90%;
     }
-}
-
-p {
-    margin-bottom: 2rem;
-}
-
-.about-flex > * {
-    flex: 1 1 50%;
 }
 
 ///***Media query for screen size large or bigger
@@ -55,38 +47,19 @@ p {
     }
 
     .about-flex {
-        
         &__left > p {
             font-size: 2.5rem;
-        }
-    }
-}
-
-
-//***Media query for screen sizes medium to large
-@media all and (min-width: $md-screen) and (max-width: $lrg-screen) {
-
-    .about-flex {
-        &__left > p {
-            font-size: 2.2rem;
-        }
-        &__right-img {
-            width: 55rem;
-            height: auto;
-            margin-top: 1rem;
+            padding: 0;
+            padding-right: 10%;
         }
     }
 }
 
 //**Media query for screens up to medium size
 @media all and (max-width: $md-screen) {
-    .about-title {
-        font-size: 5rem;
-        padding-bottom: 2rem;
-    }
+  
     .about-flex {
         display: inline-block;
-        margin: 0 auto;
 
         &__left > p {
             font-size: 2.5rem;
@@ -98,7 +71,12 @@ p {
     }
 }
 
+// ****Mobile screen query
 @media all and (max-width: $sm-screen) {
+
+    .about-title {
+        font-size: 5.5rem;
+    }
 
     .about-flex__left > p {
         padding: 0 8%;
