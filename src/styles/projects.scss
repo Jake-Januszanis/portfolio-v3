@@ -1,7 +1,6 @@
 @import "../styles/variables.scss";
 
 #projects {
-    height: auto;
     margin: 0 13%;
 }
 
@@ -14,29 +13,36 @@
 }
 
 .projects-flex-container {
+    margin: 0 auto;
     display: flex;
+    // flex-wrap: wrap;
     padding-bottom: 5rem;
     justify-content: center;
+
+    // .projects-flex-container > * {
+    //     flex: 1 1 50%;
+    // }
     
 
     // ****Left side of projects display flex*****
-    &__left {
-        color: $black-text;
-
+    &__left {  
 
         &-title {
+            color: $black-text;
             font-size: 3rem;
             margin: 0;
             font-weight: bold;
         }
 
         &-subtitle {
+            color: $black-text;
             font-size: 1.5rem;
             font-weight: lighter;
         }
 
         &-description {
-            font-size: 1.7rem;
+            color: $black-text;
+            font-size: 2rem;
             width: 80%;
             max-width: 66ch;
             letter-spacing: .5%;
@@ -45,7 +51,7 @@
 
         &-links {
             display: flex;
-            flex-direction: column;
+            flex-direction: column;               
 
             &-btn {
                 color: $accent-color-primary;
@@ -53,27 +59,21 @@
                 background-color: transparent;
                 font-size: 2rem;
                 font-weight: bold;
-                text-align: start;
                 text-decoration: none;
                 padding-bottom: 1rem;
                 cursor: pointer;
-                width: auto;
+
             }
             
         }
     }
 
 // *****CSS for right side of projects display*****
-    &__right-image {
-        height: 30rem;
-        width: 40rem;
-        border-radius: 1rem;
 
-        &-2 {
-            height: 34rem;
-            width: 40rem;
-            border-radius: 1rem;
-        }
+    &__right-image {
+        height: 35rem;
+        width: 45rem;
+        border-radius: 1rem;
     }
 }
 
@@ -81,6 +81,7 @@
 @media all and (min-width: $lrg-screen) {
 
     .projects-flex-container {
+        width: 60vw;
 
         &__left {
 
@@ -117,6 +118,7 @@
     .projects-flex-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding-bottom: 10rem;
 
         &__left {
@@ -126,16 +128,59 @@
               &-description,
                 &-links-btn {
                     text-align: center;
-                    width: 100%;
+                    margin: 2rem auto;
                 }
                 
                 &-links {
                     margin-bottom: 3rem;
+
+                    &-btn {
+                        margin: .5rem 0;
+                    }
                 }
         }
 
         &__right-image {
             width: 45rem;
         }
+    }
+}
+
+@media all and (max-width: $sm-screen) {
+
+    #projects {
+        margin: 0;
+    }
+
+    .projects-flex-container {
+
+        &__left {
+           width: 85%;
+
+            &-title {
+                font-size: 3rem;
+            }
+
+            &-subtitle {
+                font-size: 1.5rem;
+            }
+
+            &-description {
+                font-size: 1.7rem;
+                width: 100%;
+            }
+
+            &-links-btn {
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+
+        &__right-image {
+            width: 40rem;
+            height: 34rem;
+        }
+
+
     }
 }

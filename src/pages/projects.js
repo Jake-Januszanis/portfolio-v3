@@ -44,7 +44,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="projects-flex-container__right">
-                        <img className="projects-flex-container__right-image-2" alt="Pomodoro app screenshot" src={pomoTimerImg}></img>
+                        <img className="projects-flex-container__right-image" alt="Pomodoro app screenshot" src={pomoTimerImg}></img>
                     </div>
                 </div>
             </div>
