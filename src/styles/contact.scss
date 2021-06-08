@@ -1,7 +1,6 @@
 @import "../styles/variables.scss";
 
 #contact {
-    height: auto;
     background-color: $gray-bg;
     padding-bottom: 10rem;
 }
@@ -19,7 +18,6 @@
     &__form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         padding-top: 5rem;
 
         &-container {
@@ -58,6 +56,7 @@
 
             &[type=textarea] {
                 font-size: 1.7rem;
+                height: 8rem;
             }
 
             //Floating label for name & email inputs css
@@ -72,7 +71,7 @@
             //Floating label for textarea css
             &:focus ~ label[for=message],
             &:valid ~ label[for=message] {
-                bottom: 8rem;
+                bottom: 10rem;
             }
 
             //If input is valid border will be teal color
@@ -92,7 +91,6 @@
             font-size: 2.5rem;
             font-weight: bold;
             color: $black-text;
-            border: none;
             border: 2px solid $accent-color-light;
             border-radius: 10px;
             position: relative;
@@ -158,7 +156,7 @@
         }
 
         &-group {
-            width: 80%;
+            width: 70%;
         }
     }
 }

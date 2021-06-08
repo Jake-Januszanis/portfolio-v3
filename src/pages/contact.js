@@ -22,7 +22,7 @@ export default function Contact() {
                 </div>
 
                 <div className="contact__form-group">
-                    <textarea className="contact__form-textarea" rows="3" id="message" name="message" maxLength="500" placeholder=" " required></textarea>
+                    <textarea className="contact__form-textarea" type="textarea" rows="3" id="message" name="message" maxLength="500" placeholder=" " required></textarea>
                     <label className="contact__form-label" htmlFor="message">Message:</label>
                 </div>
                 <button className="contact__form-submit" type="submit">Submit</button>
