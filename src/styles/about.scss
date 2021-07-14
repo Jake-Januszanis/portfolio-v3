@@ -1,7 +1,6 @@
 @import "../styles/variables.scss";
 
 #about {
-    background-color: $gray-bg;
     min-height: 50vh;
     position: relative;
 }
@@ -28,7 +27,7 @@
         
 
     &__left > p {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         padding: 0 10%;
         color: $black-text;
         max-width: 68ch;

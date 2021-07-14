@@ -15,8 +15,8 @@ export default function Main() {
   return (
     <>
     <Home />
-    <About />
     <Projects />
+    <About />
     <Contact />
     </>
   )
