@@ -39,6 +39,10 @@
     cursor: pointer;
     text-decoration: none;
 
+    &:hover {
+        color: $accent-color-primary;
+    }
+
     &__container {
         margin-top: 7rem;
     }
