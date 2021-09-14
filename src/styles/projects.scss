@@ -14,7 +14,7 @@
 }
 
 .projects-flex-container {
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
     padding-bottom: 5rem;
     justify-content: center;
@@ -73,13 +73,19 @@
     }
 }
 
+.mobile-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 57rem;
+}
+
 
 @media all and (min-width: $lrg-screen) {
 
     .projects-flex-container {
-        width: 60vw;
 
-        &__left {
+        &__left { 
 
             &-title {
                 font-size: 4rem;
@@ -98,6 +104,10 @@
             }
         }
     }
+}
+
+.mobile-img-container {
+    width: 46rem;
 }
 
 @media all and (max-width: $md-screen) {
@@ -151,10 +161,10 @@
     .projects-flex-container {
 
         &__left {
-           width: 85%;
+           width: 100%;
 
             &-title {
-                font-size: 3rem;
+                font-size: 4rem;
             }
 
             &-subtitle {
@@ -164,6 +174,7 @@
             &-description {
                 font-size: 1.7rem;
                 width: 100%;
+                text-align: left;
             }
 
             &-links-btn {
@@ -176,7 +187,8 @@
             width: 40rem;
             height: 34rem;
         }
-
-
+    }
+    .mobile-img-container {
+        width: 40rem;
     }
 }

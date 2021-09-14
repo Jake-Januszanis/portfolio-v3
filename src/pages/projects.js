@@ -2,6 +2,9 @@ import React from 'react';
 import "../styles/projects.scss";
 import weatherAppImg from '../styles/images/weather-app-img.png';
 import pomoTimerImg from '../styles/images/pomoTimerApp.png';
+import HomeScreen from '../styles/images/HomeScreen.png';
+
+import MovieScreen from '../styles/images/MovieScreen.png';
 
 export default function Projects() {
     return (
@@ -11,7 +14,26 @@ export default function Projects() {
 
                 <div className="projects-flex-container">
                     <div className="projects-flex-container__left">
-                        <h2 className="projects-flex-container__left-title">Weather App</h2>
+                        <h2 className="projects-flex-container__left-title">Flingo</h2>
+                        <h3 className="projects-flex-container__left-subtitle">(Expo, React Native, JavaScript, NodeJS, Express, Heroku)</h3>
+                        <p className="projects-flex-container__left-description">
+                        Flingo is a mobile app that gives movie recommendations to users based on genres they choose along with the streaming services they have access to.
+                        The idea of this project was to limit the amount of time spent scrolling on apps like Netflix or Hulu. This project is still in the process of being completed so it is not available for download at this time. For more details 
+                        check out the Github repo which can be found by clicking the source code link below.
+                        </p>
+                        <div className="projects-flex-container__left-links">
+                            <a href="https://github.com/Jake-Januszanis/rn-movie-app-frontend" className="projects-flex-container__left-links-btn" target="_blank" rel="noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                    <div className="mobile-img-container">
+                        <img width='210px' alt="Weather app screenshot" src={HomeScreen}></img>
+                        <img width='210px;' alt="Weather app screenshot" src={MovieScreen}></img>
+                    </div>
+                </div>
+
+                <div className="projects-flex-container">
+                    <div className="projects-flex-container__left">
+                        <h2 className="projects-flex-container__left-title">Express Weather</h2>
                         <h3 className="projects-flex-container__left-subtitle">(React, Tailwind CSS, Express, Heroku)</h3>
                         <p className="projects-flex-container__left-description">
                         Weather app that takes 5 digit US zip code and retrieves data from OpenWeatherMap API.
