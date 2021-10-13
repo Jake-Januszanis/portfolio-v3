@@ -1,9 +1,9 @@
 import React from 'react';
 import "../styles/projects.scss";
-import weatherAppImg from '../styles/images/weather-app-img.png';
 import pomoTimerImg from '../styles/images/pomoTimerApp.png';
 import HomeScreen from '../styles/images/HomeScreen.png';
-
+import WeatherAppDisplay from '../styles/images/WeatherAppDisplay.png';
+import WeatherAppHome from '../styles/images/WeatherAppHome.png'
 import MovieScreen from '../styles/images/MovieScreen.png';
 
 export default function Projects() {
@@ -45,8 +45,9 @@ export default function Projects() {
                             <a href="https://react-weather-v2.herokuapp.com/" className="projects-flex-container__left-links-btn" target="_blank" rel="noreferrer">Live Site</a>
                         </div>
                     </div>
-                    <div className="projects-flex-container__right">
-                        <img className="projects-flex-container__right-image" alt="Weather app screenshot" src={weatherAppImg}></img>
+                    <div className="mobile-img-container">
+                        <img width='210px' alt="Weather app screenshot" src={WeatherAppHome}></img>
+                        <img width='210px;' alt="Weather app screenshot" src={WeatherAppDisplay}></img>
                     </div>
                 </div>
 

@@ -14,7 +14,6 @@
 }
 
 .projects-flex-container {
-    // margin: 0 auto;
     display: flex;
     padding-bottom: 5rem;
     justify-content: center;
@@ -66,9 +65,13 @@
 
 // *****CSS for right side of projects display*****
 
+    &__right {
+        width: 40rem
+    }
+
     &__right-image {
         height: 35rem;
-        width: 45rem;
+        width: 40rem;
         border-radius: 1rem;
     }
 }
