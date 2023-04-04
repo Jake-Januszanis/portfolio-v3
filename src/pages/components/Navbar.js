@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import "../../styles/navbar.scss";
 import styled from 'styled-components';
-const resume = require("../../styles/images/Jake-Januszanis-Resume.pdf");
+const resume = require("../../styles/images/jake-resume.pdf");
 
 const NavWrapper = styled.div`
     display: flex;
