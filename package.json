@@ -22,7 +22,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "sass": "^1.32.10"
+    "sass": "^1.32.10",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "prettier": "2.2.1"
