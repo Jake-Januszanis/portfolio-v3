@@ -9,12 +9,10 @@ export default function About() {
                 <h1 className="about-title">About Me</h1>
                 <div className="about-flex">
                     <div className="about-flex__left">
-                       <p> Hello! I’m Jake Januszanis, a Software Developer currently located in Denver, CO.</p>
-                        <p>I focus on building user-friendly web pages with an emphasis on simple & clean designs.
+                       <p> Hello! I’m Jake Januszanis, a Software Developer currently located in San Diego, CA.</p>
+                        <p>
+                        I focus on building user-friendly web apps with an emphasis on simple & clean designs.
                         I’m constantly looking for new ways to improve my work while also staying updated on the newest trends.  
-                         </p>
-                         <p>
-                         My technology of choice is React but I am also proficient in building projects using HTML, CSS, and JavaScript.
                          </p>
                     </div>
 
