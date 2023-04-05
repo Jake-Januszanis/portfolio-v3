@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/projects.scss";
-import pomoTimerImg from '../styles/images/pomoTimerApp.png';
+// import pomoTimerImg from '../styles/images/pomoTimerApp.png';
 import HomeScreen from '../styles/images/HomeScreen.png';
 import WeatherAppDisplay from '../styles/images/WeatherAppDisplay.png';
 import WeatherAppHome from '../styles/images/WeatherAppHome.png'
@@ -51,7 +51,7 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className="projects-flex-container">
+                {/* <div className="projects-flex-container">
                     <div className="projects-flex-container__left">
                         <h2 className="projects-flex-container__left-title">Pomodoro Timer</h2>
                         <h3 className="projects-flex-container__left-subtitle">(HTML5, SASS, JavaScript, EJS, Express, Mongoose, MongoDB, Heroku)</h3>
@@ -69,7 +69,7 @@ export default function Projects() {
                     <div className="projects-flex-container__right">
                         <img className="projects-flex-container__right-image" alt="Pomodoro app screenshot" src={pomoTimerImg}></img>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </section>
