@@ -15,7 +15,7 @@ export default function Main() {
   return (
     <>
     <Home />
-    <Projects />
+    {/* <Projects /> */}
     <About />
     <Contact />
     </>

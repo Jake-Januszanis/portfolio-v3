@@ -8,7 +8,7 @@ const NavWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     margin: 2.5rem 2.5rem 0 0;
-    gap: 3rem;
+    gap: 1.5rem;
 `
 const StyledLink = styled(Link)`
     font-size: 2.5rem;
@@ -46,7 +46,7 @@ export default function Navbar() {
     return (
         <NavWrapper>
             <StyledLink to="#about">About</StyledLink>
-            <StyledLink to="#projects">Projects</StyledLink>
+            {/* <StyledLink to="#projects">Projects</StyledLink> */}
             <StyledLink to="#contact">Contact</StyledLink>
             <StyledLink as='button' onClick={openPdf} onKeyPress={handleKeyPress}>Resume</StyledLink>
         </NavWrapper>

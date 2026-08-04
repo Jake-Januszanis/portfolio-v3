@@ -20,7 +20,7 @@ export default function Home() {
               </div>
           </div>
         </div>
-        <a href="#projects"><ScrollBtn /> </a>
+        <a href="#about"><ScrollBtn /> </a>
       </div>
     </section> 
 
