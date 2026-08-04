@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import "../../styles/navbar.scss";
 import styled from 'styled-components';
 const resume = require("../../styles/images/Jake-Januszanis-Resume.pdf");
 
-const NavWrapper = styled.div`
+const NavWrapper = styled.nav`
     display: flex;
     justify-content: flex-end;
-    margin: 2.5rem 2.5rem 0 0;
-    gap: 1.5rem;
-`
+    height: 10vh;
+    margin: 2.5rem .5rem;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        margin: 2.5rem 1rem 2.5rem 0;
+    }
+`;
+
 const StyledLink = styled(Link)`
     font-size: 2.5rem;
     padding-right: 2.2rem;
@@ -21,14 +26,28 @@ const StyledLink = styled(Link)`
     background-color: transparent;
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         font-weight: bold;
         color: #0a838a;
         transform: scale(1.1);
         transition: all ease-in .1s;
     }
 
-`
+    @media (min-width: 1750px) {
+        font-size: 3rem;
+        padding-right: 2.4rem;
+    }
+
+    @media (max-width: 1200px) {
+        font-size: 2.3rem;
+        padding-right: 2rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 2rem;
+    }
+`;
 
 export default function Navbar() {
 
@@ -44,7 +63,7 @@ export default function Navbar() {
 
 
     return (
-        <NavWrapper>
+        <NavWrapper aria-label="Primary navigation">
             <StyledLink to="#about">About</StyledLink>
             {/* <StyledLink to="#projects">Projects</StyledLink> */}
             <StyledLink to="#contact">Contact</StyledLink>
@@ -52,4 +71,3 @@ export default function Navbar() {
         </NavWrapper>
     )
 }
-
