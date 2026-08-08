@@ -4,6 +4,10 @@ import dotenv from 'dotenv';
 import OpenAI from "openai";
 import { publishPRReview } from "./github.js";
 
+const EXCLUDED_FILES = [
+    "package-lock.json",
+];
+
 dotenv.config();
 
 const client = new OpenAI({
@@ -28,12 +32,14 @@ main().catch(console.error);
 
 
 function getDiff() {
-    const baseBranch = process.env.BASE_BRANCH || "origin/main";
+    const baseBranch = process.env.BASE_BRANCH || "origin/master";
+
+    const excludeArgs = EXCLUDED_FILES.map((file) => `':(exclude)${file}'`).join(" ");
 
     const diffCommand = 
         process.env.BASE_SHA && process.env.HEAD_SHA 
-            ? `git diff ${process.env.BASE_SHA} ${process.env.HEAD_SHA}`
-            : `git diff ${baseBranch}...HEAD`
+            ? `git diff ${process.env.BASE_SHA} ${process.env.HEAD_SHA} -- . ${excludeArgs}`
+            : `git diff ${baseBranch}...HEAD -- . ${excludeArgs}`;
 
     try {
         return execSync(diffCommand, {
