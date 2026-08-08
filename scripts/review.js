@@ -37,7 +37,8 @@ function getDiff() {
 
     try {
         return execSync(diffCommand, {
-            encoding: "utf-8"
+            encoding: "utf-8",
+            maxBuffer: 10 * 1024 * 1024 // 10 MB
         });
     } catch (error) {
         throw new Error(`Failed to generate git diff using "${diffCommand}": ${error.message}`);
