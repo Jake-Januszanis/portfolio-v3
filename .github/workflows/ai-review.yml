@@ -34,7 +34,7 @@ jobs:
         run: npm ci
       
       - name: Run AI PR Review
-        run: node scripts/review.js
+        run: node scripts/review.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-5-mini

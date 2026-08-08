@@ -2,7 +2,7 @@ import fs from "fs";
 import { execSync } from "child_process";
 import dotenv from 'dotenv';
 import OpenAI from "openai";
-import { publishPRReview } from "./github.js";
+import { publishPRReview } from "./github.mjs";
 
 const EXCLUDED_FILES = [
     "package-lock.json",
